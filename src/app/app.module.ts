@@ -2,13 +2,26 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-
+import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
+import { AcercaComponent } from './componentes/acerca/acerca.component';
+import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
+import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { HardskillComponent } from './componentes/hardskill/hardskill.component';
+import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
+import {httpClientModule} from'@angular/common/http';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EncabezadoComponent,
+    AcercaComponent,
+    ExperienciaComponent,
+    EducacionComponent,
+    HardskillComponent,
+    ProyectoComponent
   ],
   imports: [
     BrowserModule
+    httpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
