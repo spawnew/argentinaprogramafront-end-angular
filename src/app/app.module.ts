@@ -8,7 +8,7 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { HardskillComponent } from './componentes/hardskill/hardskill.component';
 import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
-import {httpClientModule} from'@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +21,6 @@ import {httpClientModule} from'@angular/common/http';
   ],
   imports: [
     BrowserModule
-    httpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
