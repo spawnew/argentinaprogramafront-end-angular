@@ -1,0 +1,123 @@
+.portada{
+    border-radius:32px 32px 32px 32px;
+  width: 101.5%;
+  height:350px;
+  
+  margin-left: -12px;
+  
+   }
+    .fotoperfil{
+    width:152px;
+    height:152px;
+   border-radius:50%;
+   margin-top:-110px;
+   z-index: 1 ;
+   margin-left: 10px;
+  }
+  .navbar-nav {
+margin-left:auto;
+  }
+  
+  
+  .nombre{
+    
+   font-size: 20px;
+   
+   
+    
+  }
+
+
+
+  
+
+.textito{
+margin-left: 100px;
+
+}
+.segundobloque{
+
+border-radius:32px 32px 0 0;
+border: aqua;
+background-color: azure;
+border:solid rgb(174, 173, 245)
+
+
+}
+.primera
+{
+padding:auto ;
+border-radius:32px 32px 32px 32px;
+
+background-color:rgb(227, 238, 245);  
+margin-left:10px;
+margin-right: 10px;
+
+}
+.seccion2{
+
+border-radius:32px 32px 32px 32px;
+background-color:rgb(227, 238, 245);   
+margin-left:10px;
+margin-right: 10px;
+
+
+}
+.seccion3{
+
+border-radius:32px 32px 32px 32px;
+
+background-color:rgb(227, 238, 245);     
+margin-left:10px;
+margin-right: 10px;
+
+
+}
+.seccion4{
+
+border-radius:32px 32px 32px 32px;
+
+background-color:rgb(227, 238, 245);       
+margin-left:10px;
+margin-right: 10px;
+
+
+}
+.seccion5{
+
+border-radius:32px 32px 32px 32px;
+background-color:rgb(227, 238, 245);    
+margin-left:10px;
+margin-right: 10px;
+
+
+}
+.completo{
+margin-left:10px;
+margin-right: 10px;
+background-color:rgb(24, 160, 223);
+
+
+}
+.ACERCA{
+padding:3px;
+margin-left:10px;
+font-size: 15px;
+
+
+}
+.abajodeacerca{
+padding:auto ;
+margin-left: 14px;
+margin-top: -4px;
+}
+
+.suma{
+width: 1px;
+}
+
+
+
+
+
+

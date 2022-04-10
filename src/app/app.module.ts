@@ -2,22 +2,25 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
-import { AcercaComponent } from './componentes/acerca/acerca.component';
-import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
-import { EducacionComponent } from './componentes/educacion/educacion.component';
-import { HardskillComponent } from './componentes/hardskill/hardskill.component';
-import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
+import { HeaderComponent } from './app/componentes/header/header.component';
+import { AcercaComponent } from './app/componentes/acerca/acerca.component';
+import { ExperienciaComponent } from './app/componentes/experiencia/experiencia.component';
+import { EducacionComponent } from './app/componentes/educacion/educacion.component';
+import { HardskillComponent } from './app/componentes/hardskill/hardskill.component';
+import { ProyectoComponent } from './app/componentes/proyecto/proyecto.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    EncabezadoComponent,
+    HeaderComponent,
     AcercaComponent,
     ExperienciaComponent,
     EducacionComponent,
     HardskillComponent,
-    ProyectoComponent
+    ProyectoComponent,
+   
+  
   ],
   imports: [
     BrowserModule
