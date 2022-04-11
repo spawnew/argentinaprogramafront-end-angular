@@ -1,0 +1,26 @@
+
+{
+    "navegacion":{
+    "nombre":"lucas sorzio",
+    "linkfacebook":"https://www.facebook.com/",
+    "linkinstagram":"https://www.instagram.com/",
+    "linktwiter":"https://twitter.com/?lang=es",
+    "login":"login"
+    
+    },
+    
+   
+    
+    "persona":{
+    "nombre":"lucas sorzio",
+    "ubicacion":"Buenos Aires,Argentina",
+    "profesion":"estudiante Argentina programa"
+    
+    },
+    "patrocinadores":{
+            "empresa":"conicet",
+            "universidad":"universidad de buenos aires"
+    
+    }
+    }
+    

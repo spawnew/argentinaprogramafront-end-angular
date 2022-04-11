@@ -8,8 +8,8 @@ import { ExperienciaComponent } from './app/componentes/experiencia/experiencia.
 import { EducacionComponent } from './app/componentes/educacion/educacion.component';
 import { HardskillComponent } from './app/componentes/hardskill/hardskill.component';
 import { ProyectoComponent } from './app/componentes/proyecto/proyecto.component';
-
-
+import{HttpClientModule } from '@angular/common/http';
+import { PorfolioService } from './servicios/porfolio.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +23,8 @@ import { ProyectoComponent } from './app/componentes/proyecto/proyecto.component
   
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
