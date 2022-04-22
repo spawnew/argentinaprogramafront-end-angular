@@ -10,6 +10,7 @@ import { HardskillComponent } from './app/componentes/hardskill/hardskill.compon
 import { ProyectoComponent } from './app/componentes/proyecto/proyecto.component';
 import{HttpClientModule } from '@angular/common/http';
 import { PorfolioService } from './servicios/porfolio.service';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { PorfolioService } from './servicios/porfolio.service';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    NgCircleProgressModule.forRoot({}),
   ],
   providers: [],
   bootstrap: [AppComponent]
