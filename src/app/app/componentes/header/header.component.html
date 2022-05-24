@@ -23,7 +23,11 @@
               <div class="row">
 
                 <div class="col-md-2">
-                  <img src="./assets/2.jpg" class="img-fluid fotoperfil " alt="...">
+                  <div *ngIf="usuario">
+                    
+                      <img src={{usuario.fotoPerfil}} class="fotoperfil"> 
+                                        
+                </div>
                 </div>
                 <div class="suma" > <button type="button" class="btn btn-primary"><i class="fas fa-pencil-alt"></i></button>
                 </div>  
@@ -34,7 +38,7 @@
                     <div class="col-1"></div>
                     <div class="col-2">
                      
-                      <h1>{{usuario.nombre}}</h1>
+                      <h1>{{usuario.nombre+" "+usuario.apellido}}</h1>
                         
               
                     </div>
@@ -53,9 +57,9 @@
                   <div class="row">
                     <div class="col-1"></div>
                     <div class="col-6">
-                      <div><h5>Buenos Aires(Argentina) Informacion de contacto</h5> </div>   
+                      <div><h5>{{usuario.titulo}}</h5> </div>   
                     <div class="row">
-                      <div id="1"><h5>Estudiante Argentina programa</h5></div>
+                      <div><h5>{{usuario.descripcion}}</h5></div>
                     </div>
                     <div class="row">
                       <div class="col-6">

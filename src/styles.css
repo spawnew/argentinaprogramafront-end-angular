@@ -1,7 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files
+
+
+.fotoperfil{
+    width:152px;
+    height:152px;
+   border-radius:50%;
+   margin-top:-110px;
+   z-index: 1 ;
+   margin-left: 10px;
+  }
+
+
+*/
 
 
 
+.fotoperfil{
+  width:152px;
+  height:152px;
+ border-radius:50%;
+ margin-top:-110px;
+ z-index: 1 ;
+ margin-left: 10px;
+}
 
 .portada{
     border-radius:32px 32px 32px 32px;
@@ -11,14 +32,7 @@
   margin-left: -12px;
   
    }
-    .fotoperfil{
-    width:152px;
-    height:152px;
-   border-radius:50%;
-   margin-top:-110px;
-   z-index: 1 ;
-   margin-left: 10px;
-  }
+    
   .navbar-nav {
 margin-left:auto;
   }
