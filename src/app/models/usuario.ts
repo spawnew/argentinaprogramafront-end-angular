@@ -4,5 +4,5 @@ export interface Usuario{
     apellido:string;
     titulo:string;
     descripcion:string;
-    fotoPerfil:string;
+    fotodePerfil:string;
 }
