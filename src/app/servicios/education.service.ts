@@ -21,7 +21,7 @@ private apiServerUrl=environment.apiBaseUrl;
   public addEducation(education:Education):Observable<Education>{
     return this.http.post<Education>(`${this.apiServerUrl}/educacion/add`,education);
   }
-  public updateEducacion(education:Education):Observable<Education>{
+  public updateEducation(education:Education):Observable<Education>{
     return this.http.post<Education>(`${this.apiServerUrl}/educacion/update`,education);
   }
   public deleteEducation(educationId:number):Observable<void>{

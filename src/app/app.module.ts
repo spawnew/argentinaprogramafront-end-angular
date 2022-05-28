@@ -8,6 +8,8 @@ import { ProyectoComponent } from './app/componentes/proyecto/proyecto.component
 import { EducationComponent } from './app/componentes/education/education.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -26,8 +28,10 @@ import { BrowserModule } from '@angular/platform-browser';
   
   ],
   imports:[
-  BrowserModule,
-    HttpClientModule, 
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

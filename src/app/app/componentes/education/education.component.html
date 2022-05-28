@@ -1,10 +1,22 @@
 <div class="seccion4">
     <h3>Educacion</h3>
 <div class="container">
+<div class="text-center">
+    <button type="button" class="btn btn-success" (click)="onOpenModal('add')">
+<a class="nav-link style"="color:aliceblue">
+añadir educacion<span class="sr-only">(current)</span>
+</a>
+    </button>
+
+    </div>
+    <div id="main-container"></div>
     <div class="row"*ngFor="let education of educations">
 
         <div class="col-3">
            <img src="{{education.imagenEdu}}" width="100">
+        
+           <div class="suma "> <button type="button" class="btn btn-primary"><i class="fas fa-pencil-alt"(click)="onOpenModal('edit',education)"></i></button>
+           </div>
         </div>
         <div class="col-6">
             {{education.tituloEdu}}
@@ -15,26 +27,102 @@
         <div class="col-12">
             {{education.desdcEdu}}
         </div>
+    
+    <div class= "col-1"><div class="lapiz"> <button type="button" class="btn btn-primary"><i class="fas fa-trash"(click)="onOpenModal('delete',education)"></i></button>
+    </div>
+    </div>
+
+<!--modal añadir education-->
+<div class="modal fade"
+ id="addEducationModal"
+  tabindex="-1"
+   role="dialog"
+aria-labelledby="addEducationModallabel"
+aria-hidden="true"
+    >
+
+<div class="modal-dialog"role="document">
+    <div class="modal-content">
+
+        <div class="model-header">
+            <h5 class="modal-title"id="addEducationModallabel">añadir educacion</h5>
+            <button type="button"class="close"data-dismiss="modal"aria-label="close"><span aria-hidden="true"&timer></span></button>
+        </div>
+        <div class="modal-body">
+            <form #addForm="ngForm" (ngSubmit)="onAddEducation(addForm)">
+                <div class="form-group">
+                    <label for="tituloEdu">Titulo</label>
+                    <input type="text"
+                    ngModel
+                    name="tituloEdu"
+                    class="form-control"
+                    id="tituloEdu"
+                    placeholder="Titulo"
+                    required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaEdu">Fecha</label>
+                    <input type="text"
+                    ngModel
+                    name="fechaEdu"
+                    class="form-control"
+                    id="fechaEdu"
+                    placeholder="Fecha"
+                    required>
+                </div>
+                <div class="form-group">
+                    <label for="descEdu">Descripcion</label>
+                    <input type="text"
+                    ngModel
+                    name="descEdu"
+                    class="form-control"
+                    id="descEdu"
+                    placeholder="Descripcion"
+                    required>
+                </div>
+                <div class="form-group">
+                    <label for="imagenEdu">imagen</label>
+                    <input type="text"
+                    ngModel
+                    name="imagenEdu"
+                    class="form-control"
+                    id="imangeEdu"
+                    placeholder="Imagen"
+                    required>
+                </div>
+                <div class="modal-footer">
+                    <button
+                    type="button"
+                    id="add-education-form"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                    >
+                    cerrar
+                    </button>
+                    <button
+                    [disabled]="addForm.invalid"
+                        type="submit"
+                        class="btn btn-primary"
+                        >
+                        añadir cambios
+                    </button>                 
+                </div>
+           
+            </form>
+        </div>
+    </div>
+    
+
+
+            
+        </div>
     </div>
 
 
 
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
 </div>
 
@@ -43,4 +131,6 @@
 
 
 
-</div>
+
+
+
